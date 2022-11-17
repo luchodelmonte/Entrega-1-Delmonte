@@ -1,0 +1,19 @@
+{% extends 'appcoder/base.html' %}  
+
+{% block contenido %}
+<h1> </h1>
+
+<form action="/coder/animal/crear/" method="post">
+    {% csrf_token %}
+    <p>
+        Animal: <input type="text" name="animal">
+    </p>
+
+    <p>
+        Bioma: <input type="text" name="bioma" id="">
+    </p>
+
+    <input type="submit" value="Enviar">
+</form>
+
+{% endblock %}
